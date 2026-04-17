@@ -268,7 +268,7 @@ export function getServices(): Service[] {
         "Single-source subcontractor management",
         "Detailed project scheduling",
         "Open-book budgeting and cost transparency",
-        "BBB Accredited with 5-star Google rating",
+        "5-star Google rating with hundreds of verified reviews",
       ],
       applications: [
         "Commercial tenant improvements",

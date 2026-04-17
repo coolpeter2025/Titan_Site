@@ -124,7 +124,7 @@ export default async function LocationPage({ params }: Props) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { icon: "🛡️", label: "Licensed & Insured", detail: "FL #CBC1264713" },
-              { icon: "🏆", label: "BBB Accredited", detail: "A+ Rated" },
+              { icon: "⭐", label: "5-Star Google Rated", detail: "Verified reviews" },
               { icon: "🏠", label: "350+ Projects", detail: "In Tampa Bay" },
               { icon: "💯", label: "100% Guarantee", detail: "Pay when satisfied" },
             ].map((s, i) => (

@@ -101,7 +101,7 @@ export default function ContactPage() {
       <section className="py-12 bg-gray-50 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-500 text-sm">
-            Titan Homes Group — Florida Licensed General Contractor {LICENSE} · Fully Bonded &amp; Insured · BBB Accredited · NKBA Certified
+            Titan Homes Group — Florida Licensed General Contractor {LICENSE} · Fully Bonded &amp; Insured · 5-Star Google Rated
           </p>
         </div>
       </section>

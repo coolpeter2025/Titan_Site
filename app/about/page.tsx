@@ -8,7 +8,7 @@ import { getLocations } from "@/lib/data";
 export const metadata: Metadata = {
   title: `About Us — ${SITE_NAME} | Tampa Bay's Licensed General Contractor`,
   description:
-    "Learn about Titan Homes Group — Tampa Bay's premier licensed, bonded, and insured general contractor. 10+ years, 350+ projects, BBB Accredited. FL License #CBC1264713.",
+    "Learn about Titan Homes Group — Tampa Bay's premier licensed, bonded, and insured general contractor. 10+ years, 350+ projects, 5-star Google rated. FL License #CBC1264713.",
   openGraph: {
     title: `About Titan Homes Group | Tampa Bay FL`,
     description: "10+ years serving Tampa Bay homeowners with expert remodeling and construction services.",
@@ -63,7 +63,7 @@ export default function AboutPage() {
                   Starting with a small team in Tampa, owners Jonathan Ofer and Shalom Halfon grew the company through exceptional work and word-of-mouth referrals. Today, Titan Homes Group operates from two offices — Tampa and Sarasota — with a team of 20+ full-time licensed professionals.
                 </p>
                 <p>
-                  We hold Florida General Contractor License {LICENSE} and maintain full bonding and insurance coverage, giving our clients complete peace of mind on every project. Our accreditations include BBB Accredited Business, NKBA Certified Member, NARI Member, HomeAdvisor, and Yelp.
+                  We hold Florida General Contractor License {LICENSE} and maintain full bonding and insurance coverage, giving our clients complete peace of mind on every project. We are also a HomeAdvisor Pro and a trusted partner across Yelp and Google with hundreds of 5-star reviews.
                 </p>
                 <p>
                   Our guarantee is simple and unique in the industry: <strong>we do not ask for final payment until you are 100% satisfied</strong> with the completed work. No exceptions.
@@ -147,11 +147,9 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
               { icon: "🏛️", title: "FL General Contractor License", detail: `License ${LICENSE}` },
-              { icon: "🏆", title: "BBB Accredited Business", detail: "Better Business Bureau" },
               { icon: "⭐", title: "Google 5-Star Rating", detail: "Hundreds of verified reviews" },
-              { icon: "🎓", title: "NKBA Certified Member", detail: "National Kitchen & Bath Association" },
-              { icon: "🔨", title: "NARI Member", detail: "Natl. Assoc. of the Remodeling Industry" },
               { icon: "🏠", title: "HomeAdvisor Pro", detail: "Verified & screened professional" },
+              { icon: "🛡️", title: "Fully Bonded & Insured", detail: "Complete project protection" },
             ].map((cert, i) => (
               <div key={i} className="bg-white rounded-xl p-6 text-center shadow-sm border border-gray-100">
                 <div className="text-4xl mb-3">{cert.icon}</div>

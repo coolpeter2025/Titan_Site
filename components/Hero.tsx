@@ -63,7 +63,6 @@ export default function Hero({
               <span>Licensed &amp; Insured · #CBC1264713</span>
               <span className="hidden sm:inline">10+ Years in Tampa Bay</span>
               <span>350+ Projects Completed</span>
-              <span className="hidden md:inline">BBB Accredited</span>
               <span>5.0★ Google Rating</span>
             </div>
           </div>

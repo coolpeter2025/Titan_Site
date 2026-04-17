@@ -288,8 +288,8 @@ export default async function SlugPage({ params }: Props) {
                     {[
                       "FL Licensed #CBC1264713",
                       "Fully bonded & insured",
-                      "BBB Accredited Business",
-                      "NKBA Certified Member",
+                      "5-star Google rated",
+                      "HomeAdvisor Pro verified",
                       "10+ years, 350+ projects",
                       "100% satisfaction guarantee",
                       "Financing available",
