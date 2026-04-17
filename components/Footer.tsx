@@ -55,15 +55,15 @@ export default function Footer() {
               <li>
                 <p className="text-white/55 text-xs uppercase tracking-wider mb-1">Tampa</p>
                 <p className="text-white/80 text-xs mb-1">5103 Memorial Hwy, Tampa, FL 33634</p>
-                <a href="tel:+18136084564" className="text-white font-semibold hover:text-[var(--lavender)]">
-                  (813) 608-4564
+                <a href="tel:+17277094141" className="text-white font-semibold hover:text-[var(--lavender)]">
+                  (727) 709-4141
                 </a>
               </li>
               <li>
                 <p className="text-white/55 text-xs uppercase tracking-wider mb-1">Sarasota</p>
                 <p className="text-white/80 text-xs mb-1">4333 S Tamiami Trail Suite A, Sarasota, FL 34231</p>
-                <a href="tel:+19412412101" className="text-white font-semibold hover:text-[var(--lavender)]">
-                  (941) 241-2101
+                <a href="tel:+17277094141" className="text-white font-semibold hover:text-[var(--lavender)]">
+                  (727) 709-4141
                 </a>
               </li>
               <li className="pt-1">

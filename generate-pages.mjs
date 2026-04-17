@@ -173,7 +173,7 @@ We understand that time is critical after a storm. A damaged roof or broken wind
 With our experience working directly with Florida insurance carriers, we provide comprehensive damage documentation, detailed repair estimates, and advocate for maximum coverage on your behalf. ${l} homeowners trust Titan Homes Group to restore their properties quickly, properly, and with the quality craftsmanship that holds up through future storms.`,
       faqs: [
         { question: `Do you work with insurance companies for storm damage in ${l}?`, answer: `Yes. Titan Homes Group works directly with all major insurance carriers serving ${l}, FL. We provide thorough damage documentation and detailed repair estimates to support your claim and help ensure you receive the coverage you're entitled to.` },
-        { question: `How quickly can you respond to storm damage in ${l}?`, answer: `We offer emergency response for storm-damaged properties in ${l}. Call us immediately after a storm at (813) 608-4564 for priority scheduling, emergency tarping, and board-up services to prevent further damage.` },
+        { question: `How quickly can you respond to storm damage in ${l}?`, answer: `We offer emergency response for storm-damaged properties in ${l}. Call us immediately after a storm at (727) 709-4141 for priority scheduling, emergency tarping, and board-up services to prevent further damage.` },
         { question: `What types of storm damage do you repair in ${l}?`, answer: `We repair all types of storm damage in ${l} including roof damage, missing shingles, broken windows and doors, siding damage, water intrusion, structural damage, and complete rebuilds when necessary. No storm damage project is too large or complex for our licensed team.` },
       ],
     },
@@ -181,9 +181,9 @@ With our experience working directly with Florida insurance carriers, we provide
 
   return contentMap[service.slug] || {
     intro: `Professional ${s} services in ${sl} from Titan Homes Group — Tampa Bay's licensed, bonded, and insured general contractor.`,
-    body: `Titan Homes Group provides expert ${s.toLowerCase()} services throughout ${sl}. Our licensed team delivers quality results on every project. Call us at (813) 608-4564 for a free consultation.`,
+    body: `Titan Homes Group provides expert ${s.toLowerCase()} services throughout ${sl}. Our licensed team delivers quality results on every project. Call us at (727) 709-4141 for a free consultation.`,
     faqs: [
-      { question: `How much does ${s.toLowerCase()} cost in ${l}?`, answer: `Pricing varies based on project scope and specifications. Call Titan Homes Group at (813) 608-4564 for a free, detailed quote for your ${l} project.` },
+      { question: `How much does ${s.toLowerCase()} cost in ${l}?`, answer: `Pricing varies based on project scope and specifications. Call Titan Homes Group at (727) 709-4141 for a free, detailed quote for your ${l} project.` },
     ],
   };
 }
@@ -205,7 +205,7 @@ for (const service of services) {
       locationSlug: location.slug,
       state: location.state,
       metaTitle: `${service.name} ${location.name} FL - Expert Contractors | Titan Homes Group`,
-      metaDescription: `Top-rated ${service.name.toLowerCase()} in ${location.name}, FL. Licensed general contractor with 10+ years and 350+ completed projects. Free consultations — call (813) 608-4564 | Titan Homes Group.`,
+      metaDescription: `Top-rated ${service.name.toLowerCase()} in ${location.name}, FL. Licensed general contractor with 10+ years and 350+ completed projects. Free consultations — call (727) 709-4141 | Titan Homes Group.`,
       h1: `${service.name} Services in ${location.name}, FL`,
       intro: content.intro,
       bodyContent: content.body,

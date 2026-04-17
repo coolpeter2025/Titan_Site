@@ -1,9 +1,9 @@
 export const SITE_NAME = "Titan Homes Group";
 export const SITE_URL = "https://titanhomesgroup.com";
-export const PHONE_TAMPA = "(813) 608-4564";
-export const PHONE_SARASOTA = "(941) 241-2101";
-export const PHONE_TAMPA_RAW = "+18136084564";
-export const PHONE_SARASOTA_RAW = "+19412412101";
+export const PHONE_TAMPA = "(727) 709-4141";
+export const PHONE_SARASOTA = "(727) 709-4141";
+export const PHONE_TAMPA_RAW = "+17277094141";
+export const PHONE_SARASOTA_RAW = "+17277094141";
 export const EMAIL = "info@titanhomesgroup.com";
 export const LICENSE = "#CBC1264713";
 export const ADDRESS_TAMPA = "5103 Memorial Hwy, Tampa, FL 33634";

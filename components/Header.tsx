@@ -20,11 +20,11 @@ export default function Header() {
       <div className="hidden md:block bg-[var(--navy-darker)] text-xs">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-4">
           <div className="flex items-center gap-5 text-gray-200">
-            <a href="tel:+18136084564" className="hover:text-white">
-              Tampa: <span className="font-semibold">(813) 608-4564</span>
+            <a href="tel:+17277094141" className="hover:text-white">
+              Tampa: <span className="font-semibold">(727) 709-4141</span>
             </a>
-            <a href="tel:+19412412101" className="hover:text-white">
-              Sarasota: <span className="font-semibold">(941) 241-2101</span>
+            <a href="tel:+17277094141" className="hover:text-white">
+              Sarasota: <span className="font-semibold">(727) 709-4141</span>
             </a>
             <a href="mailto:info@titanhomesgroup.com" className="hidden lg:inline hover:text-white">
               info@titanhomesgroup.com
@@ -69,7 +69,7 @@ export default function Header() {
           {/* Mobile actions */}
           <div className="lg:hidden flex items-center gap-2">
             <a
-              href="tel:+18136084564"
+              href="tel:+17277094141"
               className="bg-[var(--lavender)] text-[var(--navy)] px-3 h-11 rounded font-bold text-sm flex items-center"
               aria-label="Call Tampa"
             >
@@ -115,11 +115,11 @@ export default function Header() {
                 >
                   Free Consultation
                 </Link>
-                <a href="tel:+18136084564" className="btn-outline-white w-full">
-                  Tampa: (813) 608-4564
+                <a href="tel:+17277094141" className="btn-outline-white w-full">
+                  Tampa: (727) 709-4141
                 </a>
-                <a href="tel:+19412412101" className="btn-outline-white w-full">
-                  Sarasota: (941) 241-2101
+                <a href="tel:+17277094141" className="btn-outline-white w-full">
+                  Sarasota: (727) 709-4141
                 </a>
               </li>
             </ul>

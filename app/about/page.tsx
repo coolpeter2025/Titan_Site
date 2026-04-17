@@ -193,14 +193,14 @@ export default function AboutPage() {
               <p className="text-[var(--lavender)] text-xs font-bold uppercase tracking-widest mb-3">Tampa Office</p>
               <p className="text-white font-bold text-xl mb-1">5103 Memorial Hwy</p>
               <p className="text-gray-400 mb-3">Tampa, FL 33634</p>
-              <a href="tel:+18136084564" className="text-white text-2xl font-bold">{PHONE_TAMPA}</a>
+              <a href="tel:+17277094141" className="text-white text-2xl font-bold">{PHONE_TAMPA}</a>
               <p className="text-gray-500 text-sm mt-2">Monday–Friday, 9:00 AM–5:00 PM</p>
             </div>
             <div className="md:border-l md:border-white/10 md:pl-8">
               <p className="text-[var(--lavender)] text-xs font-bold uppercase tracking-widest mb-3">Sarasota Office</p>
               <p className="text-white font-bold text-xl mb-1">4333 S Tamiami Trail Suite A</p>
               <p className="text-gray-400 mb-3">Sarasota, FL 34231</p>
-              <a href="tel:+19412412101" className="text-white text-2xl font-bold">{PHONE_SARASOTA}</a>
+              <a href="tel:+17277094141" className="text-white text-2xl font-bold">{PHONE_SARASOTA}</a>
               <p className="text-gray-500 text-sm mt-2">Monday–Friday, 9:00 AM–5:00 PM</p>
             </div>
           </div>

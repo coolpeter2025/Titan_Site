@@ -37,11 +37,11 @@ export default function CTASection({
           <Link href="/contact" className="btn-primary w-full">
             Free Consultation
           </Link>
-          <a href="tel:+18136084564" className="btn-outline-white w-full">
-            Tampa: (813) 608-4564
+          <a href="tel:+17277094141" className="btn-outline-white w-full">
+            Tampa: (727) 709-4141
           </a>
-          <a href="tel:+19412412101" className="btn-outline-white w-full">
-            Sarasota: (941) 241-2101
+          <a href="tel:+17277094141" className="btn-outline-white w-full">
+            Sarasota: (727) 709-4141
           </a>
         </div>
 

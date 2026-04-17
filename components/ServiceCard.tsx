@@ -29,7 +29,7 @@ export default function ServiceCard({ service, showLearnMore = true }: ServiceCa
             </Link>
           )}
           <a
-            href="tel:+18136084564"
+            href="tel:+17277094141"
             className="inline-flex items-center justify-center border border-white/30 hover:bg-white/10 text-white px-5 py-2.5 rounded font-bold text-sm min-h-[44px] transition-colors flex-1"
           >
             Get Quote
