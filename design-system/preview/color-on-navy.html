@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><title>On Navy — Text Opacities</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Gantari',system-ui,sans-serif;background:#fff;padding:20px 24px}
+.card{background:#2a315b;border-radius:8px;padding:22px 24px;color:#fff}
+.row{display:flex;flex-direction:column;gap:10px}
+.line{display:flex;align-items:baseline;gap:14px}
+.bar{display:inline-block;width:58px;height:14px;border-radius:3px;background:#fff;flex-shrink:0}
+.txt{font-size:14px}
+.tag{margin-left:auto;font-family:ui-monospace,Menlo,monospace;font-size:10px;color:rgba(255,255,255,0.55)}
+</style></head>
+<body>
+<div class="card">
+  <div class="row">
+    <div class="line"><span class="bar" style="background:rgba(255,255,255,1)"></span><span class="txt" style="color:#fff;font-weight:600">Heading — full white</span><span class="tag">text-white · 100%</span></div>
+    <div class="line"><span class="bar" style="background:rgba(255,255,255,0.90)"></span><span class="txt" style="color:rgba(255,255,255,0.90)">Nav links, hero subhead</span><span class="tag">text-white/90</span></div>
+    <div class="line"><span class="bar" style="background:rgba(255,255,255,0.80)"></span><span class="txt" style="color:rgba(255,255,255,0.80)">Body copy in navy cards</span><span class="tag">text-white/80</span></div>
+    <div class="line"><span class="bar" style="background:rgba(255,255,255,0.70)"></span><span class="txt" style="color:rgba(255,255,255,0.70)">Footer paragraph, kicker</span><span class="tag">text-white/70</span></div>
+    <div class="line"><span class="bar" style="background:rgba(255,255,255,0.55)"></span><span class="txt" style="color:rgba(255,255,255,0.55)">Eyebrow / dim label</span><span class="tag">text-white/55</span></div>
+  </div>
+</div>
+</body></html>

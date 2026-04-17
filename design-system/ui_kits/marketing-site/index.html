@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Titan Homes Group — UI Kit</title>
+<link rel="stylesheet" href="../../colors_and_type.css?v=2"/>
+<style>
+  html, body { margin: 0; padding: 0; }
+  body { font-family: 'Gantari', system-ui, sans-serif; color: #1a1f3a; background: #fff; }
+  .container { max-width: 1280px; margin: 0 auto; }
+  [data-screen-label] { scroll-margin-top: 90px; }
+  .btn { font-family: inherit; cursor: pointer; text-decoration: none; }
+  .th-input {
+    font-family: inherit; font-size: 14px; padding: 12px 14px;
+    border: 1px solid var(--lavender-hover); border-radius: 6px;
+    background: #fff; color: var(--ink); outline: none;
+    min-height: 44px;
+  }
+  .th-input:focus { border-color: var(--navy); box-shadow: 0 0 0 3px rgba(51,61,122,0.15); }
+  textarea.th-input { min-height: 100px; resize: vertical; font-family: inherit; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="./data.jsx?v=8"></script>
+<script type="text/babel" src="./Icons.jsx?v=8"></script>
+<script type="text/babel" src="./Header.jsx?v=8"></script>
+<script type="text/babel" src="./HeroSections.jsx?v=8"></script>
+<script type="text/babel" src="./Sections.jsx?v=8"></script>
+<script type="text/babel" src="./Pages.jsx?v=8"></script>
+
+<script type="text/babel">
+const { useState, useEffect } = React;
+
+function App() {
+  const [route, setRoute] = useState(() => {
+    try { return localStorage.getItem("titan_route") || "home"; } catch { return "home"; }
+  });
+  useEffect(() => {
+    try { localStorage.setItem("titan_route", route); } catch {}
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [route]);
+
+  const pages = {
+    home:      { comp: HomePage,      label: "01 Home" },
+    about:     { comp: AboutPage,     label: "02 About" },
+    services:  { comp: ServicesPage,  label: "03 Services" },
+    locations: { comp: LocationsPage, label: "04 Locations" },
+    contact:   { comp: ContactPage,   label: "05 Contact" },
+  };
+  const Page = pages[route].comp;
+  return (
+    <div data-screen-label={pages[route].label}>
+      <Header onNavigate={setRoute} active={route}/>
+      <main>
+        <Page onNavigate={setRoute}/>
+      </main>
+      <Footer/>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("app")).render(<App/>);
+</script>
+</body>
+</html>

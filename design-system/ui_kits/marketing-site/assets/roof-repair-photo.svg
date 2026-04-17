@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b7088"></stop>
+      <stop offset="0.5" stop-color="#8a8fa5"></stop>
+      <stop offset="1" stop-color="#b5b9cc"></stop>
+    </linearGradient>
+    
+    <linearGradient id="shingle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3530"></stop>
+      <stop offset="1" stop-color="#5c544b"></stop>
+    </linearGradient>
+    <linearGradient id="shingleHi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5c544b"></stop>
+      <stop offset="1" stop-color="#78705f"></stop>
+    </linearGradient>
+    
+    <linearGradient id="wall2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8e1d2"></stop>
+      <stop offset="1" stop-color="#c4b99d"></stop>
+    </linearGradient>
+    
+    <linearGradient id="tarp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3968b3"></stop>
+      <stop offset="0.5" stop-color="#2a4f8a"></stop>
+      <stop offset="1" stop-color="#1e3a6b"></stop>
+    </linearGradient>
+    
+    <pattern id="dapple" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="rgba(255,255,255,0)"></rect>
+      <circle cx="2" cy="3" r="0.6" fill="rgba(255,255,255,0.04)"></circle>
+      <circle cx="6" cy="6" r="0.4" fill="rgba(0,0,0,0.04)"></circle>
+    </pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="0.4"></feGaussianBlur></filter>
+  </defs>
+
+  
+  <rect width="800" height="600" fill="url(#sky2)"></rect>
+  
+  <g opacity="0.35" fill="#d9dce8">
+    <ellipse cx="140" cy="140" rx="220" ry="40"></ellipse>
+    <ellipse cx="500" cy="110" rx="260" ry="50"></ellipse>
+    <ellipse cx="720" cy="170" rx="180" ry="32"></ellipse>
+  </g>
+
+  
+  <g opacity="0.25" fill="#3a3e52">
+    <path d="M 710 330 Q 720 260 705 220 Q 700 260 690 300 Q 680 240 670 220 Q 680 280 685 310 Q 670 260 655 240 Q 670 300 680 320 Z"></path>
+    <rect x="700" y="320" width="4" height="60"></rect>
+  </g>
+
+  
+  
+  <polygon points="60,360 320,180 340,200 340,360" fill="url(#shingle)"></polygon>
+  <polygon points="340,200 580,180 580,360 340,360" fill="url(#shingleHi)"></polygon>
+  
+  <polygon points="580,180 740,260 740,360 580,360" fill="url(#shingle)"></polygon>
+
+  
+  <g stroke="rgba(0,0,0,0.18)" stroke-width="0.8">
+    <line x1="340" y1="220" x2="580" y2="220"></line>
+    <line x1="340" y1="240" x2="580" y2="240"></line>
+    <line x1="340" y1="260" x2="580" y2="260"></line>
+    <line x1="340" y1="280" x2="580" y2="280"></line>
+    <line x1="340" y1="300" x2="580" y2="300"></line>
+    <line x1="340" y1="320" x2="580" y2="320"></line>
+    <line x1="340" y1="340" x2="580" y2="340"></line>
+  </g>
+  <g stroke="rgba(255,255,255,0.06)" stroke-width="0.6">
+    <line x1="340" y1="225" x2="580" y2="225"></line>
+    <line x1="340" y1="265" x2="580" y2="265"></line>
+    <line x1="340" y1="305" x2="580" y2="305"></line>
+  </g>
+
+  
+  <g fill="rgba(0,0,0,0.18)">
+    <rect x="360" y="222" width="14" height="2"></rect>
+    <rect x="400" y="222" width="14" height="2"></rect>
+    <rect x="440" y="222" width="14" height="2"></rect>
+    <rect x="480" y="222" width="14" height="2"></rect>
+    <rect x="520" y="222" width="14" height="2"></rect>
+    <rect x="380" y="262" width="14" height="2"></rect>
+    <rect x="420" y="262" width="14" height="2"></rect>
+    <rect x="460" y="262" width="14" height="2"></rect>
+    <rect x="500" y="262" width="14" height="2"></rect>
+    <rect x="540" y="262" width="14" height="2"></rect>
+  </g>
+
+  
+  <polygon points="380,260 470,230 500,270 490,320 400,330" fill="#7a6b52"></polygon>
+  <polygon points="380,260 470,230 500,270 490,320 400,330" fill="rgba(0,0,0,0.35)" opacity="0.7"></polygon>
+  
+  <g fill="url(#shingle)" stroke="rgba(0,0,0,0.3)" stroke-width="0.6">
+    <polygon points="380,260 390,250 400,262 395,270"></polygon>
+    <polygon points="470,230 482,234 478,246 466,240"></polygon>
+    <polygon points="500,270 510,278 500,290 492,282"></polygon>
+    <polygon points="490,320 480,330 470,325 478,315"></polygon>
+    <polygon points="400,330 390,325 395,315 405,318"></polygon>
+  </g>
+  
+  <g stroke="#5c4a34" stroke-width="1.2" opacity="0.85">
+    <line x1="395" y1="268" x2="488" y2="278"></line>
+    <line x1="398" y1="285" x2="487" y2="295"></line>
+    <line x1="403" y1="305" x2="485" y2="315"></line>
+  </g>
+
+  
+  <polygon points="350,240 620,220 630,340 340,360" fill="url(#tarp)"></polygon>
+  
+  <g stroke="rgba(255,255,255,0.10)" stroke-width="1.2" fill="none">
+    <path d="M 380 240 Q 420 275 410 340"></path>
+    <path d="M 450 232 Q 490 285 500 350"></path>
+    <path d="M 540 225 Q 560 285 590 345"></path>
+  </g>
+  <g stroke="rgba(0,0,0,0.20)" stroke-width="1" fill="none">
+    <path d="M 400 240 Q 430 280 430 350"></path>
+    <path d="M 520 228 Q 540 285 560 350"></path>
+  </g>
+  
+  <g fill="#2d2a24">
+    <circle cx="350" cy="240" r="5"></circle>
+    <circle cx="620" cy="220" r="5"></circle>
+    <circle cx="630" cy="340" r="5"></circle>
+    <circle cx="340" cy="360" r="5"></circle>
+  </g>
+  <g stroke="#5c4a34" stroke-width="2" fill="none">
+    <path d="M 350 240 L 325 280"></path>
+    <path d="M 620 220 L 650 260"></path>
+    <path d="M 630 340 L 660 370"></path>
+    <path d="M 340 360 L 320 390"></path>
+  </g>
+
+  
+  <rect x="60" y="360" width="680" height="180" fill="url(#wall2)"></rect>
+  
+  <g stroke="rgba(0,0,0,0.10)" stroke-width="0.6">
+    <line x1="60" y1="400" x2="740" y2="400"></line>
+    <line x1="60" y1="440" x2="740" y2="440"></line>
+    <line x1="60" y1="480" x2="740" y2="480"></line>
+    <line x1="60" y1="520" x2="740" y2="520"></line>
+  </g>
+
+  
+  <g>
+    <rect x="120" y="400" width="70" height="90" fill="#2b3044"></rect>
+    <rect x="120" y="400" width="70" height="90" fill="none" stroke="#3e3528" stroke-width="3"></rect>
+    <line x1="155" y1="400" x2="155" y2="490" stroke="#3e3528" stroke-width="2"></line>
+    <line x1="120" y1="445" x2="190" y2="445" stroke="#3e3528" stroke-width="2"></line>
+
+    <rect x="610" y="400" width="70" height="90" fill="#2b3044"></rect>
+    <rect x="610" y="400" width="70" height="90" fill="none" stroke="#3e3528" stroke-width="3"></rect>
+    <line x1="645" y1="400" x2="645" y2="490" stroke="#3e3528" stroke-width="2"></line>
+    <line x1="610" y1="445" x2="680" y2="445" stroke="#3e3528" stroke-width="2"></line>
+  </g>
+
+  
+  <rect x="370" y="420" width="60" height="120" fill="#6b553a"></rect>
+  <rect x="370" y="420" width="60" height="120" fill="none" stroke="#3e3528" stroke-width="2"></rect>
+  <circle cx="420" cy="482" r="2" fill="#2b2317"></circle>
+
+  
+  <g stroke="#8a6b38" stroke-width="4" fill="none">
+    <line x1="540" y1="540" x2="470" y2="290"></line>
+    <line x1="560" y1="540" x2="490" y2="290"></line>
+  </g>
+  <g stroke="#8a6b38" stroke-width="3">
+    <line x1="545" y1="510" x2="555" y2="510"></line>
+    <line x1="540" y1="475" x2="551" y2="475"></line>
+    <line x1="535" y1="440" x2="547" y2="440"></line>
+    <line x1="530" y1="405" x2="542" y2="405"></line>
+    <line x1="525" y1="370" x2="538" y2="370"></line>
+    <line x1="520" y1="335" x2="534" y2="335"></line>
+    <line x1="515" y1="300" x2="530" y2="300"></line>
+  </g>
+
+  
+  <rect x="0" y="540" width="800" height="60" fill="#4a5043"></rect>
+  <rect x="0" y="540" width="800" height="3" fill="rgba(0,0,0,0.2)"></rect>
+
+  
+  <g stroke="#3a2e20" stroke-width="3" fill="none">
+    <path d="M 80 560 Q 120 555 160 565"></path>
+    <path d="M 130 562 L 145 550"></path>
+    <path d="M 250 570 Q 290 565 330 575"></path>
+    <path d="M 290 570 L 305 555"></path>
+  </g>
+
+  
+  <rect width="800" height="600" fill="url(#dapple)" opacity="0.6"></rect>
+  
+  <radialGradient id="vig" cx="0.5" cy="0.5" r="0.8">
+    <stop offset="0.6" stop-color="rgba(0,0,0,0)"></stop>
+    <stop offset="1" stop-color="rgba(20,24,48,0.25)"></stop>
+  </radialGradient>
+  <rect width="800" height="600" fill="url(#vig)"></rect>
+</svg>

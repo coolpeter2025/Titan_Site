@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Service Card</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@500;600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Gantari',system-ui,sans-serif;background:#f3f4f6;color:#1a1f3a;padding:20px}
+.wrap{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:#333d7a;color:#fff;border-radius:8px;padding:20px;display:flex;flex-direction:column}
+.card.hover{box-shadow:0 25px 50px -12px rgba(26,31,58,.25);transform:translateY(-4px)}
+.icon{width:44px;height:44px;border-radius:6px;background:rgba(255,255,255,.10);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:#fff}
+.icon svg{width:22px;height:22px}
+.title{font-size:19px;font-weight:600;margin-bottom:8px}
+.desc{font-size:13px;line-height:1.55;color:rgba(255,255,255,.80);margin-bottom:14px}
+.btns{display:flex;gap:8px;margin-top:auto}
+.btn{flex:1;text-align:center;padding:9px;border-radius:6px;font-size:12px;font-weight:700}
+.b1{background:#ebeeff;color:#333d7a}
+.b2{border:1px solid rgba(255,255,255,.30);color:#fff}
+.tag{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6b7280;margin-bottom:6px}
+</style></head>
+<body>
+<div class="wrap">
+  <div>
+    <div class="tag">Default</div>
+    <div class="card">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg></div>
+      <div class="title">Kitchen Remodeling</div>
+      <div class="desc">Custom luxury kitchen remodeling — layout planning, cabinetry, countertops, flooring, and lighting.</div>
+      <div class="btns"><div class="btn b1">Learn More</div><div class="btn b2">Get Quote</div></div>
+    </div>
+  </div>
+  <div>
+    <div class="tag">Hover — lift + shadow</div>
+    <div class="card hover">
+      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4 8 6"/><path d="M17 19v2"/><path d="M2 12h20"/><path d="M7 19v2"/><path d="M9 5a2 2 0 0 1 2-2h1a1 1 0 0 1 1 1v6"/><path d="M4 12V6a2 2 0 0 1 2-2"/><path d="M20 12v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-5"/></svg></div>
+      <div class="title">Bathroom Remodeling</div>
+      <div class="desc">Full bathroom renovations — tile, fixtures, vanities, walk-in showers, and bathtubs.</div>
+      <div class="btns"><div class="btn b1">Learn More</div><div class="btn b2">Get Quote</div></div>
+    </div>
+  </div>
+</div>
+</body></html>

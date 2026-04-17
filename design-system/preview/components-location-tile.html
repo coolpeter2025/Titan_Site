@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Location Tile</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@500;600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Gantari',system-ui,sans-serif;background:#fff;color:#1a1f3a;padding:22px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tile{background:#ebeeff;border:1px solid #d9defc;border-radius:8px;padding:14px 12px;text-align:center}
+.tile.hover{background:#d9defc}
+.name{font-weight:600;color:#333d7a;font-size:14px}
+.sub{color:#6b7280;font-size:11px;margin-top:2px}
+.tag{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6b7280;margin-bottom:6px;grid-column:1/-1}
+</style></head>
+<body>
+<div class="grid">
+  <div class="tag">Default</div>
+  <div class="tile"><div class="name">Tampa</div><div class="sub">FL · Hillsborough County</div></div>
+  <div class="tile"><div class="name">Clearwater</div><div class="sub">FL · Pinellas County</div></div>
+  <div class="tile"><div class="name">Palm Harbor</div><div class="sub">FL · Pinellas County</div></div>
+  <div class="tile hover"><div class="name">Sarasota</div><div class="sub">FL · Sarasota County · Hover</div></div>
+</div>
+</body></html>

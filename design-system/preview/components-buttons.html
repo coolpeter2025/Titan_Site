@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Buttons</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Gantari',system-ui,sans-serif;background:#fff;color:#1a1f3a;padding:24px}
+.row{display:flex;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+.row .lbl{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6b7280;width:110px;flex-shrink:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-weight:700;padding:11px 22px;border-radius:6px;min-height:44px;font-size:14px;border:0;cursor:pointer;transition:background-color .15s ease}
+.primary{background:#ebeeff;color:#333d7a}
+.primary:hover{background:#d9defc}
+.navy{background:#333d7a;color:#fff}
+.navy:hover{background:#2a315b}
+.out{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7);padding:9px 20px}
+.out:hover{background:#fff;color:#333d7a}
+.onnavy{background:#2a315b;padding:10px 14px;border-radius:6px;display:flex;gap:10px;flex:1;min-width:280px}
+</style></head>
+<body>
+<div class="row"><div class="lbl">On light</div><button class="btn navy">Free Consultation</button><button class="btn navy" style="background:#2a315b">Hover</button></div>
+<div class="row"><div class="lbl">On navy</div><div class="onnavy"><button class="btn primary">Free Consultation</button><button class="btn out">Call (727) 709-4141</button></div></div>
+<div class="row"><div class="lbl">Primary</div><button class="btn primary">Learn More</button><button class="btn primary" style="background:#d9defc">Hover</button></div>
+</body></html>

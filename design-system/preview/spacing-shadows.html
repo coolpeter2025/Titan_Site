@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Shadows</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Gantari',system-ui,sans-serif;background:#fff;color:#1a1f3a;padding:28px}
+.row{display:flex;gap:22px;align-items:flex-end;justify-content:center}
+.item{text-align:center}
+.box{background:#fff;width:100px;height:80px;border-radius:8px;margin-bottom:10px;border:1px solid rgba(26,31,58,0.04)}
+.name{font-size:11px;font-weight:700}
+.use{font-size:10px;color:#6b7280;margin-top:2px}
+</style></head>
+<body>
+<div class="row">
+  <div class="item"><div class="box"></div><div class="name">None</div><div class="use">default state</div></div>
+  <div class="item"><div class="box" style="box-shadow:0 4px 6px -1px rgba(26,31,58,.10),0 2px 4px -2px rgba(26,31,58,.06)"></div><div class="name">Header</div><div class="use">shadow-md</div></div>
+  <div class="item"><div class="box" style="box-shadow:0 10px 15px -3px rgba(26,31,58,.10),0 4px 6px -4px rgba(26,31,58,.06)"></div><div class="name">Lifted</div><div class="use">subtle hover</div></div>
+  <div class="item"><div class="box" style="box-shadow:0 25px 50px -12px rgba(26,31,58,.25)"></div><div class="name">Card hover</div><div class="use">service card only</div></div>
+</div>
+</body></html>
