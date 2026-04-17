@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand palette derived from premiere-builders.net */
+  --navy: #333d7a;           /* primary navy */
+  --navy-deep: #2a315b;      /* hero overlay / footer */
+  --navy-darker: #1f2547;    /* deepest */
+  --lavender: #ebeeff;       /* pale lavender CTA bg / section bg */
+  --lavender-hover: #d9defc;
+  --ink: #1a1f3a;
+  --muted: #6b7280;
+  --background: #ffffff;
+  --foreground: #1a1f3a;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-darker: var(--navy-darker);
+  --color-lavender: var(--lavender);
+  --color-lavender-hover: var(--lavender-hover);
+  --color-ink: var(--ink);
+  --font-sans: 'Gantari', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Gantari', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Gantari', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gantari', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Ensure tap targets on mobile are ≥44px */
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Reusable button styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lavender);
+  color: var(--navy);
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+  min-height: 48px;
+  font-size: 16px;
+  text-align: center;
+}
+.btn-primary:hover {
+  background-color: var(--lavender-hover);
+}
+
+.btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.7);
+  font-weight: 700;
+  padding: 12px 26px;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+  min-height: 48px;
+  font-size: 16px;
+}
+.btn-outline-white:hover {
+  background-color: #fff;
+  color: var(--navy);
+}
+
+.btn-navy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--navy);
+  color: #fff;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+  min-height: 48px;
+  font-size: 16px;
+}
+.btn-navy:hover {
+  background-color: var(--navy-deep);
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
