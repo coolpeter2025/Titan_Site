@@ -103,9 +103,6 @@ export default async function LocationPage({ params }: Props) {
                   {svc.name} in {loc.name}
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">{svc.shortDescription}</p>
-                {svc.priceRange && (
-                  <p className="text-[var(--navy)] text-sm font-semibold">{svc.priceRange}</p>
-                )}
                 <p className="text-[var(--navy)] font-bold text-sm mt-3 group-hover:underline">
                   Learn More →
                 </p>

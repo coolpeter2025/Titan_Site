@@ -61,17 +61,6 @@ export default function ServicesPage() {
                         </span>
                         <div>
                           <h2 className="text-3xl font-bold text-[var(--ink)]">{service.name}</h2>
-                          {service.priceRange && (
-                            <p className="text-[var(--navy)] font-semibold text-sm mt-0.5">
-                              {service.priceRange}
-                              {service.timeline && ` · ${service.timeline}`}
-                            </p>
-                          )}
-                          {service.financing && (
-                            <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded font-medium mt-1">
-                              ✓ Financing Available
-                            </span>
-                          )}
                         </div>
                       </div>
                       <p className="text-gray-600 leading-relaxed mb-5">{service.description}</p>
