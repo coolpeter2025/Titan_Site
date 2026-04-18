@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { getAllPageSlugs, getPageData, getServices, getLocations } from "@/lib/data";
 import CTASection from "@/components/CTASection";
 import ProcessSteps from "@/components/ProcessSteps";
-import { SITE_NAME, PHONE_TAMPA, PHONE_SARASOTA, PHONE_TAMPA_RAW, PHONE_SARASOTA_RAW } from "@/lib/seo";
+import { SITE_NAME, PHONE_TAMPA, PHONE_TAMPA_RAW } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -140,18 +140,12 @@ export default async function SlugPage({ params }: Props) {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-5">{data.h1}</h1>
           <p className="text-xl text-gray-300 max-w-3xl mb-8">{data.intro}</p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex">
             <a
               href={`tel:${PHONE_TAMPA_RAW}`}
               className="inline-flex items-center justify-center bg-[var(--lavender)] hover:bg-[var(--lavender-hover)] text-[var(--navy)] px-8 py-4 rounded font-bold text-lg transition-colors"
             >
-              📞 Tampa: {PHONE_TAMPA}
-            </a>
-            <a
-              href={`tel:${PHONE_SARASOTA_RAW}`}
-              className="inline-flex items-center justify-center bg-[var(--navy)] hover:bg-slate-600 text-white px-8 py-4 rounded font-bold text-lg transition-colors"
-            >
-              📞 Sarasota: {PHONE_SARASOTA}
+              📞 Call {PHONE_TAMPA}
             </a>
           </div>
         </div>
@@ -266,12 +260,6 @@ export default async function SlugPage({ params }: Props) {
                     className="block bg-[var(--lavender)] hover:bg-[var(--lavender-hover)] text-[var(--navy)] text-center py-3 rounded font-bold mb-3 transition-colors"
                   >
                     📞 {PHONE_TAMPA}
-                  </a>
-                  <a
-                    href={`tel:${PHONE_SARASOTA_RAW}`}
-                    className="block bg-[var(--navy)] hover:bg-slate-600 text-white text-center py-3 rounded font-bold mb-3 transition-colors"
-                  >
-                    📞 {PHONE_SARASOTA}
                   </a>
                   <a
                     href="mailto:info@titanhomesgroup.com"

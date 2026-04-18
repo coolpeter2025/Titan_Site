@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import CTASection from "@/components/CTASection";
 import TrustSignals from "@/components/TrustSignals";
-import { SITE_NAME, PHONE_TAMPA, PHONE_SARASOTA, PHONE_TAMPA_RAW, LICENSE } from "@/lib/seo";
+import { SITE_NAME, PHONE_TAMPA, PHONE_TAMPA_RAW, LICENSE } from "@/lib/seo";
 import { getLocations } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -60,7 +60,7 @@ export default function AboutPage() {
                   Titan Homes Group was founded with a simple but powerful mission: to deliver the highest-quality home remodeling and construction services in Tampa Bay, with complete transparency, integrity, and a relentless focus on client satisfaction.
                 </p>
                 <p>
-                  Starting with a small team in Tampa, owners Jonathan Ofer and Shalom Halfon grew the company through exceptional work and word-of-mouth referrals. Today, Titan Homes Group operates from two offices — Tampa and Sarasota — with a team of 20+ full-time licensed professionals.
+                  Starting with a small team in Tampa, owners Jonathan Ofer and Shalom Halfon grew the company through exceptional work and word-of-mouth referrals. Today, Titan Homes Group operates from our Tampa office with a team of 20+ full-time licensed professionals serving all of Tampa Bay.
                 </p>
                 <p>
                   We hold Florida General Contractor License {LICENSE} and maintain full bonding and insurance coverage, giving our clients complete peace of mind on every project. We are also a HomeAdvisor Pro and a trusted partner across Yelp and Google with hundreds of 5-star reviews.
@@ -77,7 +77,7 @@ export default function AboutPage() {
                   { number: "10+", label: "Years in Business" },
                   { number: "350+", label: "Projects Completed" },
                   { number: "20+", label: "Full-Time Professionals" },
-                  { number: "2", label: "Offices in Tampa Bay" },
+                  { number: "5★", label: "Google Rating" },
                 ].map((stat, i) => (
                   <div key={i} className="bg-[var(--navy-deep)] rounded-2xl p-6 text-center">
                     <p className="text-5xl font-bold text-[var(--lavender)] mb-2">{stat.number}</p>
@@ -166,7 +166,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold text-[var(--ink)] mb-4">
-              Serving {locations.length} Communities Across Tampa Bay &amp; Sarasota
+              Serving {locations.length} Communities Across Tampa Bay
             </h2>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
@@ -183,25 +183,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Two Offices */}
+      {/* Tampa Office */}
       <section className="bg-[var(--navy-deep)] py-14">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <p className="text-[var(--lavender)] text-xs font-bold uppercase tracking-widest mb-3">Tampa Office</p>
-              <p className="text-white font-bold text-xl mb-1">5103 Memorial Hwy</p>
-              <p className="text-gray-400 mb-3">Tampa, FL 33634</p>
-              <a href="tel:+17277094141" className="text-white text-2xl font-bold">{PHONE_TAMPA}</a>
-              <p className="text-gray-500 text-sm mt-2">Monday–Friday, 9:00 AM–5:00 PM</p>
-            </div>
-            <div className="md:border-l md:border-white/10 md:pl-8">
-              <p className="text-[var(--lavender)] text-xs font-bold uppercase tracking-widest mb-3">Sarasota Office</p>
-              <p className="text-white font-bold text-xl mb-1">4333 S Tamiami Trail Suite A</p>
-              <p className="text-gray-400 mb-3">Sarasota, FL 34231</p>
-              <a href="tel:+17277094141" className="text-white text-2xl font-bold">{PHONE_SARASOTA}</a>
-              <p className="text-gray-500 text-sm mt-2">Monday–Friday, 9:00 AM–5:00 PM</p>
-            </div>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-[var(--lavender)] text-xs font-bold uppercase tracking-widest mb-3">Tampa Office</p>
+          <p className="text-white font-bold text-xl mb-1">5103 Memorial Hwy</p>
+          <p className="text-gray-400 mb-3">Tampa, FL 33634</p>
+          <a href="tel:+17277094141" className="text-white text-2xl font-bold">{PHONE_TAMPA}</a>
+          <p className="text-gray-500 text-sm mt-2">Monday–Friday, 9:00 AM–5:00 PM</p>
         </div>
       </section>
 

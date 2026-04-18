@@ -65,13 +65,6 @@ export default function Footer() {
                   (727) 709-4141
                 </a>
               </li>
-              <li>
-                <p className="text-white/55 text-xs uppercase tracking-wider mb-1">Sarasota</p>
-                <p className="text-white/80 text-xs mb-1">4333 S Tamiami Trail Suite A, Sarasota, FL 34231</p>
-                <a href="tel:+17277094141" className="text-white font-semibold hover:text-[var(--lavender)]">
-                  (727) 709-4141
-                </a>
-              </li>
               <li className="pt-1">
                 <p className="text-white/55 text-xs uppercase tracking-wider mb-1">Hours</p>
                 <p className="text-white/80 text-xs">Monday – Friday, 9:00 AM – 5:00 PM</p>

@@ -6,7 +6,7 @@ import Testimonials from "@/components/Testimonials";
 import ProcessSteps from "@/components/ProcessSteps";
 import CTASection from "@/components/CTASection";
 import Hero from "@/components/Hero";
-import { PHONE_TAMPA, PHONE_SARASOTA, PHONE_TAMPA_RAW, PHONE_SARASOTA_RAW, LICENSE } from "@/lib/seo";
+import { PHONE_TAMPA, PHONE_TAMPA_RAW, LICENSE } from "@/lib/seo";
 
 export default function HomePage() {
   const services = getServices();
@@ -28,10 +28,7 @@ export default function HomePage() {
     priceRange: "$$$$",
     hasCredential: LICENSE,
     areaServed: ["Tampa, FL", "Clearwater, FL", "St. Petersburg, FL", "Sarasota, FL", "Bradenton, FL"],
-    address: [
-      { "@type": "PostalAddress", streetAddress: "5103 Memorial Hwy", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33634", addressCountry: "US" },
-      { "@type": "PostalAddress", streetAddress: "4333 S Tamiami Trail Suite A", addressLocality: "Sarasota", addressRegion: "FL", postalCode: "34231", addressCountry: "US" },
-    ],
+    address: { "@type": "PostalAddress", streetAddress: "5103 Memorial Hwy", addressLocality: "Tampa", addressRegion: "FL", postalCode: "33634", addressCountry: "US" },
     openingHours: "Mo-Fr 09:00-17:00",
     aggregateRating: { "@type": "AggregateRating", ratingValue: "5.0", reviewCount: "100" },
     sameAs: ["https://www.bbb.org", "https://www.houzz.com"],
@@ -179,24 +176,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 9. Two offices strip */}
+      {/* 9. Tampa office strip */}
       <section className="bg-[var(--navy-deep)] py-10 sm:py-12 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            <div className="text-center md:text-left">
-              <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-2">Tampa Office</p>
-              <p className="text-white font-semibold text-base mb-2">5103 Memorial Hwy, Tampa, FL 33634</p>
-              <a href={`tel:${PHONE_TAMPA_RAW}`} className="text-[var(--lavender)] text-2xl font-bold hover:text-white">
-                {PHONE_TAMPA}
-              </a>
-            </div>
-            <div className="text-center md:text-left md:border-l md:border-white/15 md:pl-12">
-              <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-2">Sarasota Office</p>
-              <p className="text-white font-semibold text-base mb-2">4333 S Tamiami Trail Suite A, Sarasota, FL 34231</p>
-              <a href={`tel:${PHONE_SARASOTA_RAW}`} className="text-[var(--lavender)] text-2xl font-bold hover:text-white">
-                {PHONE_SARASOTA}
-              </a>
-            </div>
+          <div className="text-center">
+            <p className="text-white/60 text-xs font-bold uppercase tracking-widest mb-2">Tampa Office</p>
+            <p className="text-white font-semibold text-base mb-2">5103 Memorial Hwy, Tampa, FL 33634</p>
+            <a href={`tel:${PHONE_TAMPA_RAW}`} className="text-[var(--lavender)] text-2xl font-bold hover:text-white">
+              {PHONE_TAMPA}
+            </a>
           </div>
         </div>
       </section>

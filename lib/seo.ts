@@ -7,7 +7,6 @@ export const PHONE_SARASOTA_RAW = "+17277094141";
 export const EMAIL = "info@titanhomesgroup.com";
 export const LICENSE = "#CBC1264713";
 export const ADDRESS_TAMPA = "5103 Memorial Hwy, Tampa, FL 33634";
-export const ADDRESS_SARASOTA = "4333 S Tamiami Trail Suite A, Sarasota, FL 34231";
 export const TAGLINE = "Tampa Bay's Premier Home Remodeling & Construction Experts";
 
 export function generateServiceLocationTitle(
