@@ -45,7 +45,7 @@ export default function HomePage() {
       <Hero
         headline="Tampa's Trusted Home Remodeling Experts"
         subheadline="For Tampa homeowners who demand quality, precision, and trust. Kitchen & bath remodels, full home renovations, additions, new construction, and storm damage repair — all under one licensed contractor."
-        bgImage="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=1800&auto=format&fit=crop"
+        bgImage="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1400"
         showTrustBar={true}
       />
 
@@ -124,7 +124,7 @@ export default function HomePage() {
       <ProcessSteps />
 
       {/* 6. Services grid */}
-      <section className="py-16 sm:py-20 bg-[var(--lavender)]">
+      <section className="py-20 sm:py-24 bg-[#fafbff] border-y border-[var(--lavender-hover)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="eyebrow mb-3">What We Do</p>

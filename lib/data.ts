@@ -9,6 +9,7 @@ export interface Service {
   shortDescription: string;
   description: string;
   icon: string;
+  image: string;
   priceRange?: string;
   timeline?: string;
   financing?: boolean;
@@ -49,6 +50,7 @@ export function getServices(): Service[] {
       name: "Kitchen Remodeling",
       slug: "kitchen-remodeling",
       icon: "🍳",
+      image: "https://images.unsplash.com/photo-1556912173-3bb406ef7e77?q=80&w=1200&auto=format&fit=crop",
       shortDescription:
         "Custom luxury kitchen remodeling — layout planning, cabinetry, countertops, flooring, and lighting.",
       description:
@@ -100,6 +102,7 @@ export function getServices(): Service[] {
       name: "Bathroom Remodeling",
       slug: "bathroom-remodeling",
       icon: "🚿",
+      image: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200&auto=format&fit=crop",
       shortDescription:
         "Full bathroom renovations — tile, fixtures, vanities, walk-in showers, and bathtubs for all styles and budgets.",
       description:
@@ -143,6 +146,7 @@ export function getServices(): Service[] {
       name: "Full Home Renovations",
       slug: "full-home-renovations",
       icon: "🏠",
+      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
       shortDescription:
         "Complete interior and exterior renovations — transform your entire home with one trusted contractor.",
       description:
@@ -181,6 +185,7 @@ export function getServices(): Service[] {
       name: "Home Additions",
       slug: "home-additions",
       icon: "🏗️",
+      image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop",
       shortDescription:
         "Expand your living space — room additions, second stories, sunrooms, and garage conversions.",
       description:
@@ -219,6 +224,7 @@ export function getServices(): Service[] {
       name: "New Construction",
       slug: "new-construction",
       icon: "🏛️",
+      image: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=1200&auto=format&fit=crop",
       shortDescription:
         "Build your dream home from the ground up with full design-build services.",
       description:
@@ -257,6 +263,7 @@ export function getServices(): Service[] {
       name: "General Construction",
       slug: "general-construction",
       icon: "🔨",
+      image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop",
       shortDescription:
         "Commercial and residential general contracting for any project scope — licensed, bonded, and insured.",
       description:
@@ -295,6 +302,7 @@ export function getServices(): Service[] {
       name: "Storm Damage Repair",
       slug: "storm-damage-repair",
       icon: "⛈️",
+      image: "https://images.pexels.com/photos/3990359/pexels-photo-3990359.jpeg?auto=compress&cs=tinysrgb&w=1200",
       shortDescription:
         "Emergency and insurance-backed storm damage restoration for roofs, walls, windows, and more.",
       description:

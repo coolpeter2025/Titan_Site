@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Service } from "@/lib/data";
 import ServiceIcon from "@/components/ServiceIcon";
 
@@ -9,33 +10,43 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ service, showLearnMore = true }: ServiceCardProps) {
   return (
-    <div className="group bg-[var(--navy)] text-white rounded-lg overflow-hidden flex flex-col transition-all hover:-translate-y-1 hover:shadow-2xl">
-      <div className="p-6 sm:p-7 flex-1 flex flex-col">
-        <div className="w-12 h-12 rounded-md bg-white text-[var(--navy)] flex items-center justify-center mb-5 shadow-md">
-          <ServiceIcon slug={service.slug} size={24} />
+    <div className="group bg-white text-[var(--ink)] rounded-xl overflow-hidden flex flex-col border border-[var(--lavender-hover)] shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+      {/* Image */}
+      <div className="relative aspect-[4/3] overflow-hidden bg-[var(--navy)]">
+        <Image
+          src={service.image}
+          alt={service.name}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: "linear-gradient(180deg, rgba(26,31,58,0) 45%, rgba(26,31,58,0.55) 100%)" }}
+        />
+        {/* Icon badge */}
+        <div className="absolute left-4 bottom-4 flex h-11 w-11 items-center justify-center rounded-[10px] bg-white text-[var(--navy)] shadow-[0_6px_14px_-4px_rgba(26,31,58,0.35)]">
+          <ServiceIcon slug={service.slug} size={22} />
         </div>
-        <h3 className="text-xl sm:text-2xl font-semibold leading-tight mb-3">
+      </div>
+
+      {/* Body */}
+      <div className="flex flex-1 flex-col p-6">
+        <h3 className="mb-2 text-xl font-semibold leading-tight tracking-tight text-[var(--ink)]">
           {service.name}
         </h3>
-        <p className="text-white/80 text-sm leading-relaxed mb-5 flex-1">
+        <p className="mb-5 flex-1 text-sm leading-relaxed text-[var(--muted)]">
           {service.shortDescription}
         </p>
-        <div className="flex flex-col sm:flex-row gap-2 mt-auto pt-2">
-          {showLearnMore && (
-            <Link
-              href={`/services#${service.slug}`}
-              className="inline-flex items-center justify-center bg-[var(--lavender)] hover:bg-[var(--lavender-hover)] text-[var(--navy)] px-5 py-2.5 rounded font-bold text-sm min-h-[44px] transition-colors flex-1"
-            >
-              Learn More
-            </Link>
-          )}
-          <a
-            href="tel:+17277094141"
-            className="inline-flex items-center justify-center border border-white/30 hover:bg-white/10 text-white px-5 py-2.5 rounded font-bold text-sm min-h-[44px] transition-colors flex-1"
+        {showLearnMore && (
+          <Link
+            href={`/services#${service.slug}`}
+            className="inline-flex items-center gap-1.5 self-start text-sm font-bold text-[var(--navy)] hover:gap-2.5 transition-all"
           >
-            Get Quote
-          </a>
-        </div>
+            Learn more
+            <span aria-hidden>→</span>
+          </Link>
+        )}
       </div>
     </div>
   );
