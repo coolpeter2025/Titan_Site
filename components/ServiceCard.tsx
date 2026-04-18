@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Service } from "@/lib/data";
+import ServiceIcon from "@/components/ServiceIcon";
 
 interface ServiceCardProps {
   service: Service;
@@ -10,8 +11,8 @@ export default function ServiceCard({ service, showLearnMore = true }: ServiceCa
   return (
     <div className="group bg-[var(--navy)] text-white rounded-lg overflow-hidden flex flex-col transition-all hover:-translate-y-1 hover:shadow-2xl">
       <div className="p-6 sm:p-7 flex-1 flex flex-col">
-        <div className="w-12 h-12 rounded-md bg-white/10 flex items-center justify-center text-2xl mb-5">
-          {service.icon}
+        <div className="w-12 h-12 rounded-md bg-white text-[var(--navy)] flex items-center justify-center mb-5 shadow-md">
+          <ServiceIcon slug={service.slug} size={24} />
         </div>
         <h3 className="text-xl sm:text-2xl font-semibold leading-tight mb-3">
           {service.name}

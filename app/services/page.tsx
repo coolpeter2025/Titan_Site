@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getServices, getLocations } from "@/lib/data";
 import CTASection from "@/components/CTASection";
 import ProcessSteps from "@/components/ProcessSteps";
+import ServiceIcon from "@/components/ServiceIcon";
 import { SITE_NAME, PHONE_TAMPA, PHONE_TAMPA_RAW } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -55,7 +56,9 @@ export default function ServicesPage() {
                   <div className="lg:col-span-2">
                     <div className="sticky top-24">
                       <div className="flex items-center gap-3 mb-4">
-                        <span className="text-5xl">{service.icon}</span>
+                        <span className="w-14 h-14 rounded-md bg-[var(--lavender)] text-[var(--navy)] flex items-center justify-center shrink-0">
+                          <ServiceIcon slug={service.slug} size={28} />
+                        </span>
                         <div>
                           <h2 className="text-3xl font-bold text-[var(--ink)]">{service.name}</h2>
                           {service.priceRange && (
