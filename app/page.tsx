@@ -77,13 +77,6 @@ export default function HomePage() {
                 </p>
                 <Link href="/contact" className="btn-primary">Get a Quote</Link>
               </div>
-              <div className="bg-[var(--navy)] text-white rounded-lg p-7">
-                <h3 className="text-xl font-semibold mb-3">Need Financing?</h3>
-                <p className="text-white/80 text-sm leading-relaxed mb-5">
-                  We offer flexible financing options so you can start your remodel now and pay over time. Find a home transformation plan that fits your budget.
-                </p>
-                <a href={`tel:${PHONE_TAMPA_RAW}`} className="btn-primary">Call to Learn More</a>
-              </div>
             </div>
           </div>
         </div>
