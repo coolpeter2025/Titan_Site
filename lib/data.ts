@@ -113,7 +113,6 @@ export function getServices(): Service[] {
         "Custom tile work — floor, walls, and accents",
         "Frameless glass enclosures",
         "Double-sink vanity upgrades",
-        "Heated flooring installation",
         "ADA-accessible bathroom design available",
       ],
       applications: [
