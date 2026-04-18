@@ -46,7 +46,30 @@ export default function HomePage() {
         showTrustBar={true}
       />
 
-      {/* 2. Intro + side cards (mirrors reference layout) */}
+      {/* 2. Services grid (What We Do) */}
+      <section className="py-20 sm:py-24 bg-[#fafbff] border-y border-[var(--lavender-hover)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="eyebrow mb-3">What We Do</p>
+            <h2 className="text-3xl sm:text-4xl font-semibold text-[var(--ink)] mb-4 leading-tight">
+              From Kitchens to Full Rebuilds — We Do It All
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-base">
+              Kitchen remodeling, bathroom renovations, full home renovations, additions, new construction, and storm damage restoration — all under one licensed contractor.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
+            {services.map((service) => (
+              <ServiceCard key={service.slug} service={service} />
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link href="/services" className="btn-navy">View All Services</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Intro + side card (About Titan Homes Group) */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
@@ -113,29 +136,6 @@ export default function HomePage() {
       {/* 5. Process */}
       <ProcessSteps />
 
-      {/* 6. Services grid */}
-      <section className="py-20 sm:py-24 bg-[#fafbff] border-y border-[var(--lavender-hover)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="eyebrow mb-3">What We Do</p>
-            <h2 className="text-3xl sm:text-4xl font-semibold text-[var(--ink)] mb-4 leading-tight">
-              From Kitchens to Full Rebuilds — We Do It All
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-base">
-              Kitchen remodeling, bathroom renovations, full home renovations, additions, new construction, and storm damage restoration — all under one licensed contractor.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
-            {services.map((service) => (
-              <ServiceCard key={service.slug} service={service} />
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Link href="/services" className="btn-navy">View All Services</Link>
-          </div>
-        </div>
-      </section>
-
       {/* 7. Testimonials */}
       <Testimonials />
 
@@ -148,7 +148,7 @@ export default function HomePage() {
               Serving All of Tampa Bay
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              With offices in Tampa and Sarasota, we serve {locations.length} communities across Tampa Bay and Sarasota.
+              From our Tampa office, we serve {locations.length} communities across Tampa Bay.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 mb-8">
