@@ -72,11 +72,10 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-5">
-              <div className="grid grid-cols-3 gap-5">
+              <div className="grid grid-cols-2 gap-5">
                 {[
                   { number: "10+", label: "Years in Business" },
                   { number: "350+", label: "Projects Completed" },
-                  { number: "5★", label: "Google Rating" },
                 ].map((stat, i) => (
                   <div key={i} className="bg-[var(--navy-deep)] rounded-2xl p-6 text-center">
                     <p className="text-5xl font-bold text-[var(--lavender)] mb-2">{stat.number}</p>

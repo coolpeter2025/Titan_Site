@@ -117,11 +117,10 @@ export default function HomePage() {
               Expert Renovations · Transparent Pricing · Unmatched Customer Care
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-3xl mx-auto">
             {[
               { num: "10+", label: "Years in Business" },
               { num: "350+", label: "Projects Completed" },
-              { num: "5.0★", label: "Google Rating" },
             ].map((s) => (
               <div key={s.label} className="bg-[var(--lavender)] rounded-lg p-6 sm:p-8 text-center">
                 <p className="text-3xl sm:text-4xl font-bold text-[var(--navy)] mb-2">{s.num}</p>
