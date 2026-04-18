@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { SITE_NAME, PHONE_TAMPA, PHONE_TAMPA_RAW, EMAIL, ADDRESS_TAMPA, LICENSE } from "@/lib/seo";
+import { SITE_NAME, PHONE_TAMPA, PHONE_TAMPA_RAW, EMAIL, LICENSE } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: `Contact Us — ${SITE_NAME} | Tampa Bay Home Remodeling`,
@@ -24,7 +24,7 @@ export default function ContactPage() {
       {/* Contact Options */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
             <div className="text-center bg-gray-50 rounded-2xl p-8 border border-gray-100">
               <div className="text-5xl mb-4">📞</div>
               <h2 className="text-2xl font-bold text-[var(--ink)] mb-3">Call Us</h2>
@@ -49,14 +49,6 @@ export default function ContactPage() {
               <p className="text-gray-500 text-sm mt-4">We respond within 1 business day</p>
             </div>
 
-            <div className="text-center bg-gray-50 rounded-2xl p-8 border border-gray-100">
-              <div className="text-5xl mb-4">🏢</div>
-              <h2 className="text-2xl font-bold text-[var(--ink)] mb-4">Visit Us</h2>
-              <div className="text-left">
-                <p className="text-[var(--navy)] text-xs font-bold uppercase tracking-wider mb-1">Tampa</p>
-                <p className="text-gray-700 text-sm">{ADDRESS_TAMPA}</p>
-              </div>
-            </div>
           </div>
 
           {/* Quick Info */}
