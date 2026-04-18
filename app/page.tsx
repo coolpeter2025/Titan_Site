@@ -41,7 +41,7 @@ export default function HomePage() {
       {/* 1. Hero */}
       <Hero
         headline="Tampa's Trusted Home Remodeling Experts"
-        subheadline="For Tampa homeowners who demand quality, precision, and trust. Kitchen & bath remodels, full home renovations, additions, new construction, and storm damage repair — all under one licensed contractor."
+        subheadline="For Tampa homeowners who demand quality, precision, and trust. Kitchen & bath remodels, full home renovations, additions, new construction, and storm damage repair."
         bgImage="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1400"
         showTrustBar={true}
       />
