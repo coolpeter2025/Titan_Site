@@ -63,15 +63,6 @@ export default function Testimonials() {
           ))}
         </div>
 
-        <div className="mt-10 sm:mt-12 text-center">
-          <div className="inline-flex items-center gap-3 bg-[var(--navy)] text-white px-6 sm:px-8 py-4 rounded-lg">
-            <span className="text-2xl">★★★★★</span>
-            <div className="text-left">
-              <p className="font-bold text-base sm:text-lg">5.0 Google Rating</p>
-              <p className="text-white/70 text-xs sm:text-sm">Hundreds of verified 5-star reviews</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

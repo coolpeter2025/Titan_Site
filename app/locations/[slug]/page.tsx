@@ -121,10 +121,9 @@ export default async function LocationPage({ params }: Props) {
           <h2 className="text-3xl font-bold text-white text-center mb-10">
             Why {loc.name} Homeowners Choose Titan Homes Group
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { icon: "🛡️", label: "Licensed & Insured", detail: "FL #CBC1264713" },
-              { icon: "⭐", label: "5-Star Google Rated", detail: "Verified reviews" },
               { icon: "🏠", label: "350+ Projects", detail: "In Tampa Bay" },
               { icon: "💯", label: "100% Guarantee", detail: "Pay when satisfied" },
             ].map((s, i) => (

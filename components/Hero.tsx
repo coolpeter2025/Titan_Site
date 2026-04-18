@@ -63,11 +63,6 @@ export default function Hero({
             {/* Trust row */}
             <div className="flex flex-wrap items-center gap-6 sm:gap-8 pt-7 border-t border-[#d4c9ef]/20">
               <div>
-                <div className="text-[#d4c9ef] text-sm font-bold tracking-wide mb-0.5">★★★★★ 5.0</div>
-                <div className="text-xs text-white/65">Google Reviews</div>
-              </div>
-              <div className="hidden sm:block w-px self-stretch bg-[#d4c9ef]/20" />
-              <div>
                 <div className="text-sm font-bold text-white mb-0.5">350+</div>
                 <div className="text-xs text-white/65">Projects Completed</div>
               </div>
@@ -116,13 +111,6 @@ export default function Hero({
                 </div>
               </div>
             </div>
-            {/* Floating badge — rating */}
-            <div className="absolute right-2 sm:-right-4 top-8 z-[3] rounded-2xl border border-[#d4c9ef]/25 bg-[var(--navy-deep)] text-white px-4 py-3 shadow-[0_20px_40px_-12px_rgba(0,0,0,0.45)]">
-              <div className="text-[11px] font-semibold uppercase tracking-[.08em] text-[#d4c9ef] mb-1">Google Rating</div>
-              <div className="text-[22px] font-bold tracking-tight">
-                5.0 <span className="text-sm text-[#d4c9ef]">★★★★★</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -137,7 +125,6 @@ export default function Hero({
               </span>
               <span className="hidden sm:inline">10+ Years in Tampa Bay</span>
               <span>350+ Projects Completed</span>
-              <span>5.0★ Google Rating</span>
             </div>
           </div>
         </div>

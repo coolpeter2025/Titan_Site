@@ -29,7 +29,6 @@ const Clock = () => (
 export default function TrustSignals() {
   const signals = [
     { label: "Licensed & Insured", Icon: ShieldCheck },
-    { label: "Google 5★ Rated", Icon: Star },
     { label: "350+ Projects", Icon: Check },
     { label: "10+ Years Experience", Icon: Clock },
   ];
@@ -38,7 +37,7 @@ export default function TrustSignals() {
     <section className="bg-[var(--lavender)] py-10 sm:py-12 border-y border-[var(--lavender-hover)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center eyebrow mb-6">Trusted Across Tampa Bay</p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 items-center">
           {signals.map(({ label, Icon }, i) => (
             <div
               key={i}

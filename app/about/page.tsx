@@ -145,7 +145,6 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
               { icon: "🏛️", title: "FL General Contractor License", detail: `License ${LICENSE}` },
-              { icon: "⭐", title: "Google 5-Star Rating", detail: "Hundreds of verified reviews" },
               { icon: "🏠", title: "HomeAdvisor Pro", detail: "Verified & screened professional" },
               { icon: "🛡️", title: "Fully Bonded & Insured", detail: "Complete project protection" },
             ].map((cert, i) => (
