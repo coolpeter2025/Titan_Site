@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -38,16 +39,18 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20 gap-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 flex-shrink-0 group">
-            <div className="bg-white text-[var(--navy)] font-extrabold text-lg px-2.5 py-1 rounded tracking-wider">
-              TITAN
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="text-white font-semibold text-base sm:text-lg tracking-tight">Titan Homes Group</span>
-              <span className="hidden sm:block text-white/70 text-[11px] font-medium tracking-widest uppercase">
-                Tampa&apos;s Trusted Remodelers
-              </span>
-            </div>
+          <Link href="/" className="flex items-center gap-3 flex-shrink-0 group min-h-[44px]" aria-label="Titan Homes Group — Home">
+            <Image
+              src="/logo/titan-lockup-on-navy.svg"
+              alt="Titan Homes Group"
+              width={220}
+              height={44}
+              priority
+              className="h-10 sm:h-11 w-auto"
+            />
+            <span className="hidden sm:block text-white/70 text-[11px] font-medium tracking-widest uppercase leading-tight border-l border-white/20 pl-3">
+              Tampa&apos;s Trusted<br />Remodelers
+            </span>
           </Link>
 
           {/* Desktop Nav */}

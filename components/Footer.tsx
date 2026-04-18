@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { getServices, getLocations } from "@/lib/data";
 
@@ -12,9 +13,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="bg-white text-[var(--navy)] font-extrabold text-sm px-2 py-1 rounded">TITAN</div>
-              <span className="text-white font-semibold">Homes Group</span>
+            <div className="mb-4">
+              <Image
+                src="/logo/titan-lockup-on-navy.svg"
+                alt="Titan Homes Group"
+                width={220}
+                height={44}
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-4">
               Tampa&apos;s Trusted Home Remodeling Experts — licensed, bonded, and insured general contractor serving Tampa Bay since 2015.
