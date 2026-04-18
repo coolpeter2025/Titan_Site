@@ -33,15 +33,12 @@ export default function CTASection({
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
           <Link href="/contact" className="btn-primary w-full">
             Free Consultation
           </Link>
           <a href="tel:+17277094141" className="btn-outline-white w-full">
-            Tampa: (727) 709-4141
-          </a>
-          <a href="tel:+17277094141" className="btn-outline-white w-full">
-            Sarasota: (727) 709-4141
+            Call (727) 709-4141
           </a>
         </div>
 

@@ -24,9 +24,6 @@ export default function Header() {
             <a href="tel:+17277094141" className="hover:text-white">
               Tampa: <span className="font-semibold">(727) 709-4141</span>
             </a>
-            <a href="tel:+17277094141" className="hover:text-white">
-              Sarasota: <span className="font-semibold">(727) 709-4141</span>
-            </a>
             <a href="mailto:info@titanhomesgroup.com" className="hidden lg:inline hover:text-white">
               info@titanhomesgroup.com
             </a>
@@ -119,10 +116,7 @@ export default function Header() {
                   Free Consultation
                 </Link>
                 <a href="tel:+17277094141" className="btn-outline-white w-full">
-                  Tampa: (727) 709-4141
-                </a>
-                <a href="tel:+17277094141" className="btn-outline-white w-full">
-                  Sarasota: (727) 709-4141
+                  Call (727) 709-4141
                 </a>
               </li>
             </ul>
